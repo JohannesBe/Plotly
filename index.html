@@ -1,0 +1,30 @@
+<div id="plot"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+Plotly.plot(document.getElementById("plot"), {
+    data: [{
+        "y"     : ["1", "2", "1"],
+        "x"     : ["5", "21", "24"],
+        "width" : ["1", "1", "1"]
+        "type"  : "bar",
+        "name"  : "B"
+    }],
+    layout: {
+        "autosize": true,
+        "yaxis": {
+            "type": "linear",
+            "autorange": true,
+            "title": "A"
+        },
+        "showlegend": true,
+        "breakpoints": [],
+        "xaxis": {
+            "type": "linear",
+            "autorange": true,
+            "title": "A"
+        },
+    },
+    frames: [],
+    config: {}
+});
+</script>
